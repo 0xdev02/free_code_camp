@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+      <h1 id="title">Provide Freeback for SVU</h1>
+      <p id="description">Share your opinion now!</p>
+        <form id="survey-form" action="/action_page.php">
+          <label id="name-label" name="name">
+          <input type="text" id="name" placeholder="name" required>Enter Your name</input></label>
+          <label id="email-label" email="email">
+          <input type="email" id="email" placeholder="enter your email" required></input></label>
+          <label id="number-label" number="number"><input type="number" id="number" placeholder="phone NO." min=10 max=50></input></label>
+          <select id="dropdown">
+            <option value="first">first</option>
+            <option value="second">second</option>
+          </select>
+        <label class="name">
+          <label>
+          <input type="radio" value="Capital" name="Capital">Capital</input><label>
+            <label>
+          <input type="radio" value="small" name='small'>small</input>
+          </label>
+        </label>
+        <label>
+        <input type="checkbox" value ="Good morning!">Good morning!</input> </label><br>
+        <label><input type="checkbox" value="Good evening!">Good evening!</input></label> <br>
+
+<textarea>Feedback</textarea>
+<button id="submit" >submit</button>
+
+        </form>
+    </body>
+</head> 
+</html>   
