@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>survey-form</title>
-    <link rel="stylesheet" href="styles.css">
-    <body>
-      <h1 id="title">Provide Freeback for SVU</h1>
-      <p id="description">Share your opinion now!</p>
-        <form id="survey-form" action="/action_page.php">
-          <label id="name-label" name="name">
-          <input type="text" id="name" placeholder="name" required>Enter Your name</input></label>
-          <label id="email-label" email="email">
-          <input type="email" id="email" placeholder="enter your email" required></input></label>
-          <label id="number-label" number="number"><input type="number" id="number" placeholder="phone NO." min=10 max=50></input></label>
-          <select id="dropdown">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <h1 id="title">Provide Freeback for SVU</h1>
+    <p id="description">Share your opinion now!
+    <p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name <br>
+            <input type="text" id="name" placeholder="name" required></input>
+        </label>
+        <br></br>
+        <label for="email" id="email-label">
+            email <br>
+            <input type="email" id="email" placeholder="enter your email" required></input></label>
+        <br></br>
+        <label for="number" id="number-label">
+            number <br><input type="number" id="number" placeholder="phone NO." min=10 max=50></input></label>
+        <br></br>
+        <label for="bencher" id="bench-label">
+            you are which bencher <br>
+        <select id="dropdown">  
             <option value="first">first</option>
             <option value="second">second</option>
-          </select>
-        <label class="name">
-          <label>
-          <input type="radio" value="Capital" name="Capital">Capital</input><label>
-            <label>
-          <input type="radio" value="small" name='small'>small</input>
-          </label>
+        </select>
+    </label>
+        <br></br>
+        <label for="fav members" id="members-label">
+            select your
+            <br>
+            <input type="radio" name="member" value="1">Capital</input>
+            <br>
+            <input type="radio" name="member" value="2">small</input>
+
         </label>
-        <label>
-        <input type="checkbox" value ="Good morning!">Good morning!</input> </label><br>
-        <label><input type="checkbox" value="Good evening!">Good evening!</input></label> <br>
+        <br></br>
+        <label for="source" id="source-label">
+            Where did u find site <br>
+            <input type="checkbox" value="Firstt">Firstt</input><br>
+            <input type="checkbox" value="DsAD">DsAD</input><br>
+            <input type="checkbox" value="afafa">afafa</input><br>
+            <input type="checkbox" value="eQEqe">eQEqe</input><br>
+        </label>
+        <br></br>
+        <textarea rows="8" cols="30"></textarea>
+        <br>
+        <button id="submit">submit</button>
 
-<textarea>Feedback</textarea>
-<button id="submit" >submit</button>
+    </form>
+</body>
+</head>
 
-        </form>
-    </body>
-</head> 
-</html>   
+</html>
